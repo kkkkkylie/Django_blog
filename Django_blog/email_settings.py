@@ -1,0 +1,10 @@
+from django.conf import settings
+
+EMAIL_HOST = "HOST"
+EMAIL_PORT = 25 if settings.DEBUG else 465
+EMAIL_HOST_TLS = True if settings.DEBUG else False
+EMAIL_USE_SSL = False if settings.DEBUG else True
+EMAIL_HOST_USER = "USERNAME"
+EMAIL_HOST_PASSWORD = "PASSWORD"
+EMAIL_FROM = "EMAIL ADDRESS"
+DEFAULT_FROM_EMAIL = 'DISPLAYED EMAIL'
